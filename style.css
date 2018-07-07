@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    font-family: 'Fjalla One';
+    font-size: 20px;
+    background: #e6eaf0;
+    margin: 0 auto;
+  }
+button {
+    margin: 40px;
+    font-family: 'Fjalla One';
+  }
+input {
+    font-family: 'Fjalla One';
+    font-size: 24px;
+    text-align: center;
+    margin: 5% 0 0 0;   
+  }  
+select {
+    font-family: 'Fjalla One';
+    font-size: 20px;
+    margin: 0 0 5% 0;
+    }    

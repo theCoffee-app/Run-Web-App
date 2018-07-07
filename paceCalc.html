@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>    
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Shadows+Into+Light" rel="stylesheet">    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js.js"></script>
+    <!--<link rel="stylesheet" type="text/css" src="style.css">-->
+    
+<style>
+body {
+    text-align: center;
+    font-family: 'Fjalla One';
+    font-size: 20px;
+    background: #e6eaf0;
+    margin: 0 auto;
+  }
+    header {
+     color: #FFF;
+     background: #3F51B5;     
+     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+     padding: 16px 16px 0 16px;
+    }
+button {
+    margin: 40px;
+    font-family: 'Fjalla One';
+    font-size: 24px;
+  }
+input {
+    font-family: 'Fjalla One';
+    font-size: 24px;
+    text-align: center;
+    margin: 5% 0 0 0;   
+  }  
+select {
+    font-family: 'Fjalla One';
+    font-size: 20px;
+    margin: 0 0 5% 0;
+    }    
+  
+</style>
+</head>
+
+<body>
+<header>
+    <h1>The Pace Calculator</h1>
+</header>      
+<form class="form">
+        Distance (mi): <input type="text" id="distance">
+        <br/>
+        Time (min): <input type="text" id="min">
+        <br/>
+        Time (sec): <input type="text" id="sec">
+        <br/>
+        Pace: <input readonly type="text" id="pace">
+        <br/>
+        <button type="button" onclick="calcPace()">Calculate</button>
+    </form>
+    <a href="index.html">Shoe Caclulator</a>
+    <!-- <a href="paceCalc.html">Pace Calculator</a>-->
+    <a href="test.html">Pace Calculator</a>
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>    
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Shadows+Into+Light" rel="stylesheet">    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js.js"></script>
+    <!--<link rel="stylesheet" type="text/css" src="style.css">-->
+    
+<style>
+body {
+    text-align: center;
+    font-family: 'Fjalla One';
+    font-size: 20px;
+    background: #e6eaf0;
+    margin: 0 auto;
+  }
+    header {
+        
+        background-color: white;
+    }
+button {
+    margin: 40px;
+    font-family: 'Fjalla One';
+  }
+input {
+    font-family: 'Fjalla One';
+    font-size: 24px;
+    text-align: center;
+    margin: 5% 0 0 0;   
+  }  
+select {
+    font-family: 'Fjalla One';
+    font-size: 20px;
+    margin: 0 0 5% 0;
+    }    
+  
+</style>
+</head>
+
+<body>
+<header>
+    <h1>The Shoe Calculator</h1>
+</header>
+    <p>Shoe Type: </p>  
+   <select id="cushionDropdown">
+        <option value=0>Choose a shoe: </option>   
+        <option value="Maximal">Maximal</option>        
+        <option value="High Cushion">High Cushion</option>   
+        <option value="Normal Cushion">Normal Cushion</option>   
+        <option value="Light Cushion">Light Cushion</option>   
+        <option value="Minimal">Minimal</option>       
+    </select>
+    <br/>
+    Enter Miles:
+    <input type="text" id="Miles">    
+    <button onclick="calculate()">Calculate</button>
+    <br/>
+    <a href="news.html">News</a>
+     <!--<a href="paceCalc.html">Pace Calculator</a>-->
+     <a href="paceCalc.html">Pace Calculator</a>
+
+
+
+</body>
+</html>
