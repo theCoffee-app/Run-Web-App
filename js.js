@@ -137,9 +137,21 @@ function padNum(newSec1) {
 
 var time = (newMin + ":" + padNum(newSec1) + " min/mile");
 document.getElementById("pace").value = time;   
-//   alert(time);        
+//   alert(time);      
 }
-
+//Shows pace after calculated
+function displayPace() {
+    var paceDiv = document.getElementById("paceTB");
+    if (paceDiv.style.display === "block") {
+        paceDiv.style.display = "none";
+    } else {
+        paceDiv.style.display = "block";
+        }
+     }
+//Reset button
+function clearForm() {
+    document.getElementById("paceForm").reset();
+}
 
 
 

@@ -21,24 +21,48 @@ body {
      padding: 16px 16px 0 16px;
     }
 .form {
-    font-size: 1.25em;
+    font-size: 1.25em;    
+}
+label {
+    /*float: left;
+    width: 30%;    
+    text-align: right;  */
+    margin: 7% 0 0 0; 
 }
 button {
-    margin: 40px;
+    margin: 30px;
+    float: none;
+    width: 5em;    
     font-family: 'Fjalla One';
     font-size: 1.5em;
   }
 input {
     font-family: 'Fjalla One';
-    font-size: 1.5em;
-    text-align: center;
-    margin: 5% 0 0 0;   
+    font-size: 1.3em;
+    text-align: center;    
+    margin: 5% 2% 0 0;       
+    /*float: right;
+    width: 60%;  */  
   }  
 select {
     font-family: 'Fjalla One';
     font-size: 2em;
     margin: 0 0 5% 0;
-    }    
+    } 
+ #paceTB {
+     display: none;      
+ }    
+ .left {
+     width: 30%;
+     float: left;
+     text-align: right;
+     margin: 5% 0 0 0;
+ }  
+ .right {
+     width: 65%;
+     margin-left: 10px;
+     float: left;
+ }
   
 </style>
 </head>
@@ -47,16 +71,29 @@ select {
 <header>
     <h1>The Pace Calculator</h1>
 </header>      
-<form class="form">
-        Distance (mi): <input type="text" id="distance">
+<form class="form" id="paceForm">
+    <div class="left">Distance (mi):</div>
+    <div class="right"><input type="text" id="distance"/></div>
+    <br/>
+    <div class="left">Time (min):</div>
+    <div class="right"><input type="text" id="min"/></div>
+    <br/>  
+    <div class="left">Time (sec):</div>
+    <div class="right"><input type="text" id="sec"/></div>    
+        <!--<label for="distance">Distance (mi):</label> <input type="text" id="distance"/>
         <br/>
-        Time (min): <input type="text" id="min">
+        <label for="min">Time (min):</label> <input type="text" id="min"/>
         <br/>
-        Time (sec): <input type="text" id="sec">
+        <label for="sec">Time (sec):</label> <input type="text" id="sec"/>-->
         <br/>
-        Pace: <input readonly type="text" id="pace">
+       <div id="paceTB"> 
+            <div class="left">Pace:</div>
+            <div class="right"><input readonly type="text" id="pace"/></div>  
+        </div>
+        <br/>        
+        <button type="button" onclick="calcPace(), displayPace()">Calculate</button>
         <br/>
-        <button type="button" onclick="calcPace()">Calculate</button>
+        <button type="button" onclick="clearForm()">Reset</button>
     </form>
     <a href="index.html">Shoe Caclulator</a>
     <!-- <a href="paceCalc.html">Pace Calculator</a>-->
