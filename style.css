@@ -1,11 +1,34 @@
 body {
     text-align: center;
     font-family: 'Fjalla One';
-    font-size: 20px;
+    font-size: 2.5em;
     background: #e6eaf0;
     margin: 0 auto;
   }
-button {
+header {
+    color: #FFF;
+     background: #3F51B5;     
+     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+     padding: 16px 16px 0 16px;  
+     font-size: .8em;    
+    }
+.flex-container {
+      display: flex;
+      justify-content: center;
+      background-color: #3F51B5;
+      bottom: 0;
+      position: fixed;
+      width: 100%;
+  }
+ .flex-container > div {
+     width:250px;
+     margin: 2px, 5px, 2px, 5px;
+     text-align: center;
+     line-height: 0px;
+     font-size: 12px;    
+ }
+
+/*button {
     margin: 40px;
     font-family: 'Fjalla One';
   }
@@ -19,4 +42,4 @@ select {
     font-family: 'Fjalla One';
     font-size: 20px;
     margin: 0 0 5% 0;
-    }    
+    }    */

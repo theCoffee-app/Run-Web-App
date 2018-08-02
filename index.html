@@ -4,23 +4,9 @@
 <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Shadows+Into+Light" rel="stylesheet">    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js.js"></script>
-    <!--<link rel="stylesheet" type="text/css" src="style.css">-->
+    <link rel="stylesheet" type="text/css" href="style.css">
     
 <style>
-body {
-    text-align: center;
-    font-family: 'Fjalla One';
-    font-size: 2.5em;
-    background: #e6eaf0;
-    margin: 0 auto;
-  }
-header {
-    color: #FFF;
-     background: #3F51B5;     
-     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
-     padding: 16px 16px 0 16px;  
-     font-size: .8em;    
-    }
 button {
     margin: 20px;
     font-family: 'Fjalla One';
@@ -46,7 +32,7 @@ select {
     font-size: 1.25em;
     margin: 0 0 5% 0;
     }  
-#footer {
+/*#footer {
     color: #FFF;
      background: #3F51B5;   
      position: fixed;  
@@ -62,7 +48,7 @@ select {
     width: 3.2em;
     height: 4em;
     padding: 2px 5px 10px 20px;
-}
+}*/
   
 </style>
 </head>
@@ -90,13 +76,18 @@ select {
     <button onclick="calculate()">Calculate</button>
     <br/>
 </div>
-    <!--<a href="news.html">News</a>     
-     <a href="paceCalc.html">Pace Calculator</a>-->
-<div id="footer">
+ 
+<!--<div id="footer">
     <div id="CalcFoot">
         <a href="paceCalc.html"><img src="img/calc_icon.png"></a>
     </div>
-</div>
+</div>-->
+
+<div class="flex-container">
+        <div style="align-self: center;"><a href="paceCalc.html"><img src="img/calc_icon.png"/></a></div>
+        <div><a href="index.html"><img src="img/shoe-icon_here.png"/></a></div>
+        <!--<div>3</div>-->
+    </div>
 
 </body>
 </html>
