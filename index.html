@@ -3,10 +3,12 @@
 <head>    
 <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Shadows+Into+Light" rel="stylesheet">    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="icon" type="image/png" href="img/icon.png">
     <script src="js.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     
 <style>
+    
 button {
     margin: 20px;
     font-family: 'Fjalla One';
@@ -25,7 +27,7 @@ input {
     font-family: 'Fjalla One';
     font-size: 1.25em;
     text-align: center;
-    margin: 5% 0 0 0;   
+    margin: 5% 0 0 0;
   }  
 select {
     font-family: 'Fjalla One';
@@ -57,6 +59,7 @@ select {
 <header>
     <h1>The Shoe Calculator</h1>
 </header>
+<div id="container">
 <div id="db">
     <p>Shoe Type: </p>  
    <select id="cushionDropdown">
@@ -76,7 +79,7 @@ select {
     <button onclick="calculate()">Calculate</button>
     <br/>
 </div>
- 
+</div>
 <!--<div id="footer">
     <div id="CalcFoot">
         <a href="paceCalc.html"><img src="img/calc_icon.png"></a>

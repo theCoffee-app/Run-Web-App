@@ -12,6 +12,10 @@ header {
      padding: 16px 16px 0 16px;  
      font-size: .8em;    
     }
+#container {
+        overflow: scroll;
+        padding: 0 0 30% 0;
+    }
 .flex-container {
       display: flex;
       justify-content: center;
