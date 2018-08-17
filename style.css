@@ -21,7 +21,8 @@ header {
       justify-content: center;
       background-color: #3F51B5;
       bottom: 0;
-      position: fixed;
+      /*position: fixed;*/
+      position: absolute;
       width: 100%;      
   }
  .flex-container > div {
