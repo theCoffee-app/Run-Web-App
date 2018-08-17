@@ -10,7 +10,7 @@ header {
      background: #3F51B5;     
      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
      padding: 16px 16px 0 16px;  
-     font-size: .8em;    
+     font-size: .8em;       
     }
 #container {
         overflow: scroll;
@@ -22,7 +22,7 @@ header {
       background-color: #3F51B5;
       bottom: 0;
       position: fixed;
-      width: 100%;
+      width: 100%;      
   }
  .flex-container > div {
      width:250px;
@@ -31,10 +31,7 @@ header {
      line-height: 0px;
      font-size: 12px;    
  }
- div.page {
-     height: auto !important;
-     width: auto !important;
- }
+
 
 /*button {
     margin: 40px;
