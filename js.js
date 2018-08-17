@@ -2,6 +2,9 @@
 /*jQuery unsured:false*/
 /* eslint-env browser*/
 
+/*! Removes address bar in mobile browsers */
+setTimeout(function() { window.scrollTo(0, 1) }, 100);
+
 /* Shoe Calculator */
 function calculate() {
     var shoeType = document.getElementById("cushionDropdown");    
