@@ -5,7 +5,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="icon" type="image/png" href="img/icon.png">
 <link rel="apple-touch-icon"  href="img/icon.png">
-<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="manifest.json" />
     <script src="js.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     
@@ -14,26 +15,26 @@
 button {
     margin: 20px;
     font-family: 'Fjalla One';
-    font-size: 1.25em;
+    font-size: 1em;
   }
 #db {
-    font-size: 1.5em;
+    font-size: 1.15em;
 }
 #cushionDropdown, option {
     font-size: 1em;
 }
 #milesInput{
-    font-size: 1.25em;
+    font-size: 1.15em;
 }
 input {
     font-family: 'Fjalla One';
-    font-size: 1.25em;
+    font-size: 1.15em;
     text-align: center;
     margin: 5% 0 0 0;
   }  
 select {
     font-family: 'Fjalla One';
-    font-size: 1.25em;
+    font-size: 1.15em;
     margin: 0 0 5% 0;
     }  
 /*#footer {
@@ -89,10 +90,20 @@ select {
 </div>-->
 
 <div class="flex-container">
-        <div style="align-self: center;"><a href="paceCalc.html"><img src="img/calc_icon.png"/></a></div>
-        <div><a href="index.html"><img src="img/shoe-icon_here.png"/></a></div>
+        <div style="align-self: center;"><a href="paceCalc.html"><img src="img/calc_icon.png" style="max-width: 75px; max-height: 75px;"/></a></div>
+        <div><a href="index.html"><img src="img/shoe-icon_here.png"/ style="max-width: 90px; max-height: 90px;"></a></div>
         <!--<div>3</div>-->
     </div>
+
+<!--PWA offline cache from UpUp-->
+<script src="upup.min.js"></script>
+<script>
+  UpUp.start({
+    'content-url': 'index.html',
+    'assets': ['style.ccs', 'js.js']
+  });
+</script>
+
 
 </body>
 </html>

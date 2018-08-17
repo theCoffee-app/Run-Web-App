@@ -4,12 +4,14 @@
 <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Shadows+Into+Light" rel="stylesheet">    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="icon" type="image/png" href="img/icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="manifest.json" />
     <script src="js.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     
 <style>
 .form {
-    font-size: 1.25em;    
+    font-size: 1em;    
 }
 label {
     /*float: left;
@@ -18,15 +20,15 @@ label {
     margin: 7% 0 0 0; 
 }
 button {
-    margin: 30px;
+    margin: 15px;
     float: none;
     width: 5em;    
     font-family: 'Fjalla One';
-    font-size: 1.5em;
+    font-size: 1.15em;
   }
 input {
     font-family: 'Fjalla One';
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-align: center;    
     margin: 5% 2% 0 0;       
     /*float: right;
@@ -40,7 +42,7 @@ select {
  #paceTB {
      display: none;      
  }    
- .left {
+ /*.left {
      width: 30%;
      float: left;
      text-align: right;
@@ -50,7 +52,7 @@ select {
      width: 65%;
      margin-left: 10px;
      float: left;
- }
+ }*/
 
 </style>
 </head>
@@ -74,12 +76,12 @@ select {
         <label for="min">Time (min):</label> <input type="text" id="min"/>
         <br/>
         <label for="sec">Time (sec):</label> <input type="text" id="sec"/>-->
-        <br/>
+      <br/>
        <div id="paceTB"> 
             <div class="left">Pace:</div>
             <div class="right"><input readonly type="text" id="pace"/></div>  
         </div>
-        <br/>        
+        <!--<br/> -->      
         <button type="button" onclick="calcPace(), displayPace()">Calculate</button>
         <br/>
         <button type="button" onclick="clearForm()">Reset</button>
@@ -87,10 +89,19 @@ select {
 </div>      
   
   <div class="flex-container">
-        <div style="align-self: center;"><a href="paceCalc.html"><img src="img/calc_icon_here.png"/></a></div>
-        <div><a href="index.html"><img src="img/shoe-icon.png"/></a></div>
+        <div style="align-self: center;"><a href="paceCalc.html"><img src="img/calc_icon_here.png" style="max-width: 75px; max-height: 75px;"/></a></div>
+        <div><a href="index.html"><img src="img/shoe-icon.png" style="max-width: 90px; max-height: 90px;"/></a></div>
         <!--<div>3</div>-->
     </div>
+
+    <!--PWA offline cache from UpUp-->
+<script src="upup.min.js"></script>
+<script>
+  UpUp.start({
+    'content-url': 'paceCalc.html',
+    'assets': ['style.ccs', 'js.js']
+  });
+</script> 
 
 </body>
 </html>
