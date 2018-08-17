@@ -31,6 +31,10 @@ header {
      line-height: 0px;
      font-size: 12px;    
  }
+ div.page {
+     height: auto !important;
+     width: auto !important;
+ }
 
 /*button {
     margin: 40px;
